@@ -1,6 +1,7 @@
 package com.vincent.rxjava;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -37,5 +38,9 @@ public class MainActivity extends Activity {
 
     public void interval(View view) {
         RxUtil.interval();
+    }
+
+    public void jump(View view) {
+        startActivity(new Intent(this, TestActivity.class));
     }
 }
